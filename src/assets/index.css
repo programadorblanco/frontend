@@ -1,0 +1,483 @@
+.container-form{
+    width: 390px;
+}
+
+.email-input::placeholder, .pass-input::placeholder{
+    color: white;
+}
+
+.email-input, .pass-input, .send-input{
+    border-radius: 15px;
+}
+
+.container-login span, input, label{
+    font-size: 18px !important;
+}
+
+.bold-600{
+    font-weight: 600;
+}
+
+.logo{
+    width: 180px;
+}
+
+.persona{
+    width: 220px;
+}
+
+.h1-welcome{
+    font-size: 60px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.hide-desktop{
+    display: none !important;
+}
+
+ul li{
+    list-style: none;
+}
+
+/* INPUT FILE */
+.file-select {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .file-select::before {
+    color: #FF844B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'Change Photo'; /* testo por defecto */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .file-select input[type="file"] {
+    opacity: 0;
+    width: 200px;
+    height: 32px;
+    display: inline-block;
+  }
+
+/* DASHBOARD */
+#content-wrapper{
+    width: calc(100% - 250px);
+    background-color: #E4E4E4;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width: 250px;
+    background-color: white;
+}
+
+.logo-sidebar{
+    width: 100%;
+}
+
+.item-sidebar {
+    display: block;
+    color: black;
+}
+
+.item-sidebar:hover{
+    background-color: #FF844B;
+    color: white;
+}
+
+.active-item-sidebar{
+    background-color: #FF844B;
+    color: white;
+}
+
+.margin-left-icon-text{
+    margin-left: 15px;
+}
+
+/* HEADER */
+.dropdown-toggle::after{
+    content: unset;
+}
+
+.badge{
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 90%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.35rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.badge-counter{
+    position: absolute;
+    transform: scale(0.7);
+    transform-origin: top right;
+    right: .8rem;
+    margin-top: -.25rem;
+}
+
+.badge-danger {
+    color: #fff;
+    background-color: #e74a3b;
+  }
+  
+  a.badge-danger:hover, a.badge-danger:focus {
+    color: #fff;
+    background-color: #d52a1a;
+  }
+  
+  a.badge-danger:focus, a.badge-danger.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(231, 74, 59, 0.5);
+  }
+
+.img-profile{
+    width: 42px;
+    height: 42px;
+}
+
+.ml-user{
+    margin-left: 8px;
+}
+
+.mr-icons-header{
+    margin-right: 8px;
+}
+
+/* CONETENT */
+.h-content{
+    height: calc(100vh - 145px) !important;
+    overflow-y: scroll;
+}
+
+/* MI PERFIL */
+.img-my-profile{
+    width: 170px;
+}
+
+.active-button{
+    background-color: red;
+}
+
+.list-group-item.active{
+    background-color: #FF844B !important;
+    border: none;
+    color: white !important;
+}
+
+/* FORM MY PROFILE*/
+.form-font-size label, .form-font-size input, .form-font-size select{
+    font-size: 16px !important;
+}
+
+.margin-right{
+    margin-right: 10px;
+}
+
+/* ALL USERS */
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.thead-sticky{
+    top: -16px !important;
+}
+
+/* FORM AGENT */
+.upload-img:before{
+    color: white;
+}
+
+.upload-img{
+    background: #FF844B;
+    height: 41px;
+}
+
+.upload-img:hover{
+    background: #e26227;
+}
+
+.text-justify{
+    text-align: justify !important;
+}
+
+.tab-content{
+    padding: 0px !important;
+}
+
+#button-clear{
+    width: 290px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #ff844b;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.container-signature{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 290px;
+    margin: auto;
+}
+
+.wrong-siganture{
+    border: 2px solid red;
+}
+
+.container-btn-send-signature{
+    width: 100%;
+    text-align: right;
+}
+
+/* PDF */
+#agent-pdf-print{
+    width: 595px;
+    height: 842px;
+    background-color: white;
+    /* margin: auto; */
+}
+
+#agent-pdf-print p{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+#agent-pdf-print h4{
+    font-size: 16px;
+}
+
+.pdf-signature{
+    width: 150px;
+}
+
+.button-download-pdf{
+    position: fixed;
+    right: 40px;
+}
+
+.img-selfie-agent{
+    width: 150px;
+}
+
+.img-ine{
+    width: 100%;
+}
+
+.logo-pdf{
+    width: 80px;
+}
+
+.form-direct-deposit-pdf input, .form-direct-deposit-pdf label{
+    font-size: 14px !important;
+}
+
+.container-check{
+    background:rgb(240, 236, 236);
+}
+
+.form-direct-deposit-pdf .form-check-input:disabled~.form-check-label, .form-check-input[disabled]~.form-check-label{
+    opacity: unset !important;
+}
+
+.form-direct-deposit-pdf .form-check-input:disabled {
+    pointer-events: unset !important; 
+    filter: unset !important; 
+    opacity: unset !important; 
+}
+
+.border-top-line{
+    border-top: 1px solid black;
+}
+
+.text-header-left{
+    font-size: 8px !important;
+}
+
+.pdf-form-w9 .title-heading{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pdf-form-w9 .heading-3{
+    font-size: 11px !important;
+}
+
+.border-b{
+    border-bottom: 1px solid black;
+}
+
+.border-t{
+    border-top: 1px solid black;
+}
+
+.border-r{
+    border-right: 1px solid black;
+}
+
+.border-l{
+    border-left: 1px solid black;
+}
+
+.containersecond-text{
+    margin-bottom: 3px;
+    margin-top: -5px;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.label-label, .label-data, .label-data input, .label-data label{
+    font-size: 8px !important;
+}
+
+.padding-l{
+    padding-left: 41px !important;
+}
+
+.txt-bold{
+    font-weight: bold !important;
+}
+
+.pdf-form-w9 .form-check-input:disabled~.form-check-label, .form-check-input[disabled]~.form-check-label{
+    opacity: unset !important;
+}
+
+.pdf-form-w9 .form-check-input:disabled {
+    pointer-events: unset !important; 
+    filter: unset !important; 
+    opacity: unset !important; 
+}
+
+.pdf-form-w9 .form-check{
+    min-height: unset !important;
+}
+
+.label-part, .label-heading-tin{
+    font-size: 10px !important;
+}
+
+.label-part{
+    padding: 0px 10px;
+}
+
+.div-1{
+    width: 42px;
+}
+
+.div-2{
+    width: calc(100% - 42px);
+}
+.rec{
+    width: 10px;
+    height: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rec-guion{
+    width: 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-sign{
+    font-size: 10px !important;
+}
+
+.signature-pdf-w9{
+    width: 80px;
+    position: absolute;
+    margin-left: 35px;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.error-404{
+    width: 300px;
+}
+
+
+@media (max-width: 992px){
+    div#content-wrapper {
+        width: 100% !important;
+    }
+
+    #sidebar{
+        width: 80px;
+        z-index: 1000;
+    }
+
+    .width-list{
+        width: 50% !important;
+    }
+
+    .bg-lg-transparent{
+        background: rgb(241, 239, 239);
+    }
+}
+
+@media (max-width: 800px){
+    .hide-mobile{
+        display: none !important;
+    }
+
+    .hide-desktop{
+        display: block !important;
+    }
+
+    .max-width-mobile{
+        width: 100% !important;
+    }
+
+    .white-mobile{
+        background-color: white !important;
+    }
+
+    .no-margin-mobile{
+        margin-top: 1px !important;
+    }
+
+    .error-404{
+        width: 100%;
+    }
+}
+
+.point{
+    font-size: 40px;
+}
+.persmisos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}

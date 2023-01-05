@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// Componentes
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from "./routes/Routes";
+
+// Context
+import AuthApi from './AuthApi';
 
 function App() {
+  const [auth, setAuth] = useState(false);
+  const [role, setRole] = useState('');
+
+  const GetCookieSession = ()=>{
+    setAuth(true);
+    setRole(1);
+  }
+
+  useEffect(()=>{
+    GetCookieSession();
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App vh-100 d-flex">
+      <AuthApi.Provider value={{auth, setAuth, role, setRole}}>
+        <BrowserRouter>
+          <Routes />
+        </BrowserRouter>
+      </AuthApi.Provider>
     </div>
   );
 }

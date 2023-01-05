@@ -1,0 +1,14 @@
+// COLORES
+$light: #F1F1F1;
+$danger: #FF606B;
+$dark: #0B0B0D;
+$secondary: #FF844B;
+
+$theme-colors: (
+  light: $light,
+  danger: $danger,
+  dark: $dark,
+  secondary: $secondary
+);
+
+@import '~bootstrap/scss/bootstrap.scss';

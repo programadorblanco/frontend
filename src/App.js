@@ -6,22 +6,49 @@ import Routes from "./routes/Routes";
 // Context
 import AuthApi from './AuthApi';
 
+// Services
+import serviceUser from "./services/user";
+
 function App() {
   const [auth, setAuth] = useState(false);
   const [role, setRole] = useState('');
 
-  const GetCookieSession = ()=>{
-    setAuth(true);
-    setRole(1);
+  const GetCookieSession = () => {
+
+    const lala = serviceUser.GetUserById(1)
+      .then((response) => {
+        let user = response.data;
+        // const user = {
+        //   Id: 1,
+        //   fullName: "Jose Jose",
+        //   typeUser: 1
+        // }
+      })
+      .catch((err) => {
+        console.log(err)
+      });
+
+    const user = {
+      Id: 1,
+      fullName: "Jose Jose",
+      typeUser: 1
+    }
+    if (!user) {
+      setAuth(true);
+      setRole(user.typeUser);
+    }
+    else {
+      setAuth(false);
+    }
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     GetCookieSession();
   });
 
   return (
     <div className="App vh-100 d-flex">
-      <AuthApi.Provider value={{auth, setAuth, role, setRole}}>
+      <AuthApi.Provider value={{ auth, setAuth, role, setRole }}>
         <BrowserRouter>
           <Routes />
         </BrowserRouter>
